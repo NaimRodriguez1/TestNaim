@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import TextBox from "../components/TextBox";
+import TextBox from "../components/TextBox2";
 import userEvent from "@testing-library/user-event";
 
 describe('TextBox componente', () => {

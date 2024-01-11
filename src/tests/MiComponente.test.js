@@ -83,5 +83,25 @@ describe('funciones dentro del componente MiComponente', () => {
             expect(result).toBeNull()
         })
     })
+    
+    describe('isapple',()=>{
+        test('comprobar que la función devuelva un resultado de tipo boolean',()=>{
+            const result=isapple("manzana")
+            expect (typeof result).toBe("boolean")
+        })
+    })
 
-});
+    describe ('isapple',()=>{
+        test('comprobar que si entra la string manzana devuelve true',()=>{
+            const result=isapple("manzana")
+            expect(result).toBeTruthy()
+        })
+        })
+    })
+
+    describe('isapple',()=>{
+        test('comprobar que si entra una string que no sea manzana deuvelve false',()=>{
+            const result=isapple("pera")
+            expect(result).toBeFalsy()
+        })
+    })
