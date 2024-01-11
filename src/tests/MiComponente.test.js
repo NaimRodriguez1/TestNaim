@@ -52,14 +52,14 @@ describe('funciones dentro del componente MiComponente', () => {
     describe ('divide', ()=>{
         test('comprobar que el tipo que devuelve es un número',()=>{
             const result=divide(10,2)
-            expect(result).toBe('number')
+            expect(typeof result).toBe('number')
         })
     })
 
     describe('divide',()=>{
         test('comprobar si entra una string te devuelve null',()=>{
             const result=divide(10,"hola")
-            expect(result).toBeNull()
+            expect(result).toBe(null)
         })
     })
 
@@ -74,7 +74,7 @@ describe('funciones dentro del componente MiComponente', () => {
     describe('divide',()=>{
         test('comprobar que realiza la división de 10 y 4',()=>{
             const result = divide(10,4)
-            expect(result).toBeCloseTo(2.222,1)
+            expect(result).toBeCloseTo(2.5,1)
         })
     })
     describe('divide',()=>{
