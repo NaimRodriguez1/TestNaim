@@ -28,6 +28,8 @@ return <>
             maxWidth: '100%',
             margin: '50px auto'
         }}
+        role='caja'
+        title='es una caja'
         >
          <h2>Rellena el formulario</h2>
         <form onSubmit={handleSubmit}>
