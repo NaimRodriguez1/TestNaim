@@ -25,12 +25,13 @@ describe('FormUsuario componente',()=>{
     test('comprueba que se renderiza la cabecera de nivel 2',()=>{
         expect(h2).toBeInTheDocument()
     })
-    test('comprobar si al pulsar el botón cambia el botón de fondo', async () => {
+    test('comprobar si al pulsar el botón se borra su nombre del campo de texto', async () => {
      
         //usamos el userEvent. Lo primero que debemos hacer es inicializarlo:
         const user = userEvent.setup()
+        await user.type(text,"Juan")
         //simulamos que el usuario clica el botón               
         await user.click(button);
-        expect(h2).toBe("")
+        expect(text.value).toBe("")
     });
 })
